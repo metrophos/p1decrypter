@@ -17,7 +17,7 @@ Please create an issue if you found out that another Smart Meter will work too.
 
 ## Usage
 
-Minimal usage: `p1decrypter.py -ui UDP_SERVER_IP key`
+Usage example to send over UDP: `p1decrypter.py -u -ui UDP_SERVER_IP key`
 
 All parameters:
 ```bash
@@ -41,7 +41,7 @@ optional arguments:
   -m MAPPING, --mapping MAPPING
                         Value mapping. Default: '1-0:1.8.0','(?<=1-0:1.8.0\().*?(?=\*Wh)',\n'1-0:1.7.0','(?<=1-0:1.7.0\().*?(?=\*W)'\n'1-0:2.8.0','(?<=1-0:2.8.0\().*?(?=\*Wh)'\n'1-0:2.7.0','(?<=1-0:2.7.0\().*?(?=\*W)'
   -a AAD, --aad AAD     Additional authenticated data. Default: 3000112233445566778899AABBCCDDEEFF
-  -u, --send-to-udp     Send data to UDP. Default: true
+  -u, --send-to-udp     Send data to UDP. Default: false
   -ui UDP_HOST, --udp-host UDP_HOST
                         UDP IP / Host
   -up UDP_PORT, --udp-port UDP_PORT

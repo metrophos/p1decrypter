@@ -74,8 +74,8 @@ class P1decrypter:
         parser.add_argument('-a', '--aad', required=False, default="3000112233445566778899AABBCCDDEEFF",
                             help="Additional authenticated data. Default: 3000112233445566778899AABBCCDDEEFF")
 
-        parser.add_argument('-u', '--send-to-udp', required=False, default=True, action='store_true',
-                            help="Send data to UDP. Default: true")
+        parser.add_argument('-u', '--send-to-udp', required=False, default=False, action='store_true',
+                            help="Send data to UDP. Default: false")
         parser.add_argument('-ui', '--udp-host', help="UDP IP / Host")
         parser.add_argument('-up', '--udp-port', type=int, help="UDP port")
 
